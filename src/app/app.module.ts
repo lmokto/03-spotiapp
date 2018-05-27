@@ -17,6 +17,7 @@ import { ROUTES } from './app.routes';
 import { SpotifyService } from './services/spotify.service';
 import { NoimagesPipe } from './pipes/noimages.pipe';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
     ArtistaComponent,
     NavbarComponent,
     NoimagesPipe,
-    TarjetasComponent
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     HttpClientModule,
