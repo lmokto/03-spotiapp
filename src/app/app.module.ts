@@ -15,6 +15,7 @@ import { ROUTES } from './app.routes';
 
 // import services
 import { SpotifyService } from './services/spotify.service';
+import { NoimagesPipe } from './pipes/noimages.pipe';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SpotifyService } from './services/spotify.service';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagesPipe
   ],
   imports: [
     HttpClientModule,
