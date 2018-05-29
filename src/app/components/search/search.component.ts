@@ -13,7 +13,7 @@ export class SearchComponent {
   constructor( private spotify: SpotifyService) { }
   buscar( termino: string ) {
     this.loading = true;
-    this.spotify.getArtista(termino).subscribe( ( response: any ) => {
+    this.spotify.getArtistas(termino).subscribe( ( response: any ) => {
       console.log(response);
       this.artistas = response;
       this.loading = false;
